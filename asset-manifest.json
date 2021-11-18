@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/rebate/static/css/main.ff610138.chunk.css",
+    "main.js": "/rebate/static/js/main.13afb261.chunk.js",
+    "main.js.map": "/rebate/static/js/main.13afb261.chunk.js.map",
+    "runtime-main.js": "/rebate/static/js/runtime-main.ca69d384.js",
+    "runtime-main.js.map": "/rebate/static/js/runtime-main.ca69d384.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/rebate/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.e2dd8f5c.chunk.js": "/rebate/static/js/2.e2dd8f5c.chunk.js",
+    "static/js/2.e2dd8f5c.chunk.js.map": "/rebate/static/js/2.e2dd8f5c.chunk.js.map",
+    "index.html": "/rebate/index.html",
+    "static/css/2.f4c56af9.chunk.css.map": "/rebate/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.ff610138.chunk.css.map": "/rebate/static/css/main.ff610138.chunk.css.map",
+    "static/js/2.e2dd8f5c.chunk.js.LICENSE.txt": "/rebate/static/js/2.e2dd8f5c.chunk.js.LICENSE.txt",
+    "static/media/SignUp.a037c141.svg": "/rebate/static/media/SignUp.a037c141.svg",
+    "static/media/home-page-img-2.c705cab5.svg": "/rebate/static/media/home-page-img-2.c705cab5.svg",
+    "static/media/login-img.c1364340.svg": "/rebate/static/media/login-img.c1364340.svg",
+    "static/media/logo1.6c4e3b68.svg": "/rebate/static/media/logo1.6c4e3b68.svg",
+    "static/media/shopping-img.a0765771.svg": "/rebate/static/media/shopping-img.a0765771.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca69d384.js",
+    "static/css/2.f4c56af9.chunk.css",
+    "static/js/2.e2dd8f5c.chunk.js",
+    "static/css/main.ff610138.chunk.css",
+    "static/js/main.13afb261.chunk.js"
+  ]
+}
