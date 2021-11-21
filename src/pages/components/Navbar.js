@@ -23,6 +23,7 @@ export default function Navbar() {
                 <div className="logo"><img src={logo} alt="" /><h1>Rebate</h1></div>
                 <ul>
                     <li className="nav_items"><a href="#/"> Home</a></li>
+                    <li className="nav_items"><a href="#/products"> Products</a></li>
                     {!(token)&&<li className="nav_items"><a href="#/login"> Log in</a></li>}
                     {!(token)&&<li className="nav_items"><a href="#/signup">Sign up</a> </li>}
                     {token&&<li className="nav_items"><a href={`#/${username}/dashboard`}>Dashboard</a> </li>}

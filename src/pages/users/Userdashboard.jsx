@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import { user_data } from "../../data";
 import { useHistory } from "react-router-dom";
+import * as products from '../../Api/productsdata';
 import { ImCross } from "react-icons/im";
 import { BsInfoCircle } from "react-icons/bs";
 import { BiRightArrow } from "react-icons/bi";
@@ -31,12 +32,18 @@ function Userdashboard({ match }) {
   const [prodDet, setprodDet] = useState({})
   const [showpro, setshowpro] = useState(false)
   const [price, setprice] = useState(2000)
+  const [offer, setoffer] = useState({name:'',price:'',image:''})
 
   let admin = false
   if (localStorage.getItem("username") == "admin") {
     admin = true
   }
   const getdetails = () => {
+    products.products.map((item) => {
+      if (item.link === productLink){
+        setoffer({name:item.name,price:item.price,image:item.image})
+      }
+    })
     setshowRequestForm(false)
     // setloading(true)
     // await fetch(productLink).then(res => setprodDet(res.data))
@@ -257,24 +264,23 @@ function Userdashboard({ match }) {
           <div className="prodet">
             <div className="form-head">
               <h1>PAYMENT GATEWAY</h1>
-              {/* <button onClick={() => { setshowpro(false); setblur(!blur);setprodDet({})}}><ImCross /></button> */}
+              <button onClick={() => { setblur(!blur);setprodDet({});setshowpro(false);setoffer({name:'',price:'',image:''}) }}><ImCross /></button>
             </div>
-            {/* <div className="img">
-            <img src={prodDet.image} height="auto" width="30%" alt="product image" />
+            <div className="offer">
+              <div className="offerimage">
+                { (offer.name !== '') && <img src={offer.image}/>}
+              </div>
+              <div className="offerdetails">
+                <p>Product Name : {offer.name}</p>
+                <p>Price : ₹{offer.price}</p>
+              </div>
             </div>
-            <p><h4 style={{display:"inline"}}>Product : </h4><span>{prodDet.title}</span></p>
-            <p><h4 style={{display:"inline"}}>Description : </h4>{prodDet.description}</p>
-            <p><h4 style={{display:"inline"}}>price : </h4><span>${prodDet.price}</span></p>
-            <p><h4 style={{display:"inline"}}>category : </h4><span>{prodDet.category}</span></p> */}
-
             <StripeCheckout
             token = {postProduct}
             amount = {price *100}
             currency = 'INR'
             stripeKey = 'pk_test_51JMFbSSB989OYEdn4pm6dEloaMJGGFv9K5g8MN5clOzJRZBDarNSHoPcFSvcjXGxeEEBJhD0PpSVmFrKKlTxdTT300hIUzLE0d'
             >
-
-
             </StripeCheckout>
           </div>
           } 

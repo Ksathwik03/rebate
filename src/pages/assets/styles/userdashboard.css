@@ -368,6 +368,16 @@
     margin: 10px 0px;
 }
 
+.offerimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer p {
+    font-weight: 700;
+}
+
 @media (max-width:1100px) {
     .dashboard-box {
         width: 70vw;
