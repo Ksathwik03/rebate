@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react'
 import { admin_data} from '../../data'
 import '../assets/styles/Chat.css'
 import io from "socket.io-client";
-
 let socket;
 const link = 'http://localhost:3001';
 
@@ -32,7 +31,9 @@ function Adminchat({match}) {
     }
 
     return (
+
         <div className="chat-main">
+
         <div className="messages">
             <div className="message">
             {
