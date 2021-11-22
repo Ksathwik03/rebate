@@ -9,6 +9,7 @@ import Chat from './pages/users/Chat'
 import Navbar from './pages/components/Navbar';
 import Admindashboard from './pages/admin/Admindashboard';
 import Adminchat from './pages/admin/Adminchat';
+import Products from './pages/users/Products';
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
       <Route path='/signup' exact component={SignUp} />
       <Route path='/:userId/dashboard/:chatId' exact component={Chat} />
       <Route path='/admin/:adminId/dashboard/:chatId' exact component={Adminchat} />
+      <Route path='/products' exact component={Products} />
     </Router>
     </>
   );
