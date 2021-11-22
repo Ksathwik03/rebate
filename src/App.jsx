@@ -13,7 +13,7 @@ import Products from './pages/users/Products';
 function App() {
   return (
     <>
-    <Navbar></Navbar>
+    <Navbar />
     <Router>
       <Route path='/' exact component={HomePage} />
       <Route path='/admin' exact component={Admin} />

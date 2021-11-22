@@ -3,7 +3,6 @@ import * as products from '../../Api/productsdata';
 import '../assets/styles/products.css';
 
 export default function Products() {
-    console.log(products)
     return (
         <div>
             <div className="offer-main">

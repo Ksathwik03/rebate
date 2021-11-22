@@ -5,7 +5,7 @@ import axios from 'axios';
 import { api } from '../../Api/api';
 
 let socket;
-const link = 'http://localhost:3001';
+const link = api;
 
 function Chat({match}) {
     const [messages, setmessages] = useState([])
