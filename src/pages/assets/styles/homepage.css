@@ -89,6 +89,14 @@
     font-size: 32px;
     font-weight: bold;
     line-height: normal;
+    font-family: cursive;
+    word-spacing: -5px;
+    font-weight: 200;
+}
+.intro{
+    font-family: cursive;
+    color: #0a3687;
+
 }
 .home1 {
     flex-direction: row-reverse;
@@ -109,6 +117,9 @@
     z-index: 1;
     box-shadow: rgba(94, 94, 145, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 10px;
+    font-family: cursive;
+    color: #0a3687;
+    font-weight: 200;
 }
 @media (max-width: 1000px) {
     .container-box {

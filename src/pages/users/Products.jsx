@@ -16,6 +16,7 @@ export default function Products() {
                                     <p className="name">{item.name}</p>
                                     <p className="price"> ₹{item.price}</p>
                                 </div>
+                                <h2>Discount: {item.discount}</h2>
                                 <p>{item.description}</p>
                             </div>
                         </a>
