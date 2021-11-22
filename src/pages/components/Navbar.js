@@ -3,19 +3,22 @@ import '../assets/styles/navbar.css'
 import logo from '../assets/img/logo1.svg'
 import { useState } from 'react'
 import { useEffect } from 'react';
-export default function Navbar() {
-     const [token, setToken] = useState('');
-     const [username, setusername] = useState('')
-     
-     useEffect(() => {
-         setToken(localStorage.getItem(`token`));
-         setusername(localStorage.getItem(`username`))
-     })
-     const logout = ()=>{
-        localStorage.removeItem(`token`);
-        localStorage.removeItem('username')
-        setToken(localStorage.getItem(`token`));
-     }
+
+export default function Navbar({match}) {
+    const [token, setToken] = useState('');
+    const [username, setusername] = useState('')
+    
+    useEffect(() => {
+    setToken(localStorage.getItem(`token`));
+    setusername(localStorage.getItem(`username`))
+    console.log(match)
+    })
+
+    const logout = ()=>{
+    localStorage.removeItem(`token`);
+    localStorage.removeItem('username')
+    setToken(localStorage.getItem(`token`));
+    }
 
     return (
         <>
