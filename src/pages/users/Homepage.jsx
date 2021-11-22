@@ -2,6 +2,7 @@ import React from "react";
 import "../assets/styles/homepage.css";
 import shoppingImg from "../assets/img/shopping-img.svg";
 import homepageImg2 from '../assets/img/home-page-img-2.svg'
+import robot from '../assets/img/final.svg'
 function Home() {
   return (
     <>
@@ -25,6 +26,13 @@ function Home() {
             Rebate is a place where you can get additional discounts on your
             purchase👛💸 with secure payments... <br />
             Interesting right !!!!!
+          </div>
+        </div>
+        <div className="home container-box">
+          <img src={robot} alt="" />
+          <div className="intro">
+              Why Waiting !!! <br/>Checkout our products page to view all the offers on various trending products with huge discounts 
+              from your favourite websites and save your money by ordering on our website  
           </div>
         </div>
       </div>

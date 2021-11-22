@@ -3,7 +3,6 @@ import * as products from '../../Api/productsdata';
 import '../assets/styles/products.css';
 
 export default function Products() {
-    console.log(products)
     return (
         <div>
             <div className="offer-main">
@@ -17,6 +16,7 @@ export default function Products() {
                                     <p className="name">{item.name}</p>
                                     <p className="price"> ₹{item.price}</p>
                                 </div>
+                                <h2>Discount: {item.discount}</h2>
                                 <p>{item.description}</p>
                             </div>
                         </a>
